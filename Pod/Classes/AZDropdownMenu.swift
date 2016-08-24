@@ -181,7 +181,7 @@ public class AZDropdownMenu: UIView {
         overlay.accessibilityIdentifier = "OVERLAY"
         overlay.alpha = 0
         overlay.userInteractionEnabled = true
-        let touch : UIGestureRecognizer = UITapGestureRecognizer(target: self, action: "overlayTapped")
+        let touch : UIGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AZDropdownMenu.overlayTapped))
         overlay.addGestureRecognizer(touch)
         addSubview(overlay)
     }
